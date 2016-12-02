@@ -1,6 +1,13 @@
 [package]
+authors = ["Philipp Oppermann <dev@phil-opp.com>"]
 name = "embedded_stm32f7"
 version = "0.1.0"
-authors = ["Philipp Oppermann <dev@phil-opp.com>"]
 
 [dependencies]
+bit_field = "0.6.0"
+once = "0.3.2"
+volatile = "0.2.0"
+
+[dependencies.embedded]
+branch = "rewrite"
+git = "https://github.com/embed-rs/embedded-rs.git"
