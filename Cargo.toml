@@ -9,4 +9,5 @@ once = "0.3.2"
 volatile = "0.2.0"
 
 [dependencies.embedded]
+default-features = false
 git = "https://github.com/embed-rs/embedded-rs.git"
