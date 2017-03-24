@@ -2,6 +2,7 @@
 authors = ["Philipp Oppermann <dev@phil-opp.com>"]
 name = "embedded_stm32f7"
 version = "0.1.0"
+license = "MIT/Apache-2.0"
 
 [dependencies]
 bit_field = "0.6.0"
