@@ -2,7 +2,7 @@
 
 use embedded::components::gpio::stm32f7::Gpio;
 
-extern crate embedded;
+pub extern crate embedded;
 extern crate volatile;
 extern crate bit_field;
 #[macro_use]
