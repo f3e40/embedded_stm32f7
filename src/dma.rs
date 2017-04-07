@@ -23,93 +23,93 @@ pub struct Dma {
     # [ doc = "0x1c - stream x memory 0 address register" ]
     pub s0m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x20 - stream x memory 1 address register" ]
-    pub s0m1ar: volatile::ReadWrite<S0m1ar>,
+    pub s0m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x24 - stream x FIFO control register" ]
     pub s0fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0x28 - stream x configuration register" ]
-    pub s1cr: volatile::ReadWrite<S1cr>,
+    pub s1cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0x2c - stream x number of data register" ]
-    pub s1ndtr: volatile::ReadWrite<S1ndtr>,
+    pub s1ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0x30 - stream x peripheral address register" ]
-    pub s1par: volatile::ReadWrite<S1par>,
+    pub s1par: volatile::ReadWrite<S0par>,
     # [ doc = "0x34 - stream x memory 0 address register" ]
-    pub s1m0ar: volatile::ReadWrite<S1m0ar>,
+    pub s1m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x38 - stream x memory 1 address register" ]
-    pub s1m1ar: volatile::ReadWrite<S1m1ar>,
+    pub s1m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x3c - stream x FIFO control register" ]
-    pub s1fcr: volatile::ReadWrite<S1fcr>,
+    pub s1fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0x40 - stream x configuration register" ]
-    pub s2cr: volatile::ReadWrite<S2cr>,
+    pub s2cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0x44 - stream x number of data register" ]
-    pub s2ndtr: volatile::ReadWrite<S2ndtr>,
+    pub s2ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0x48 - stream x peripheral address register" ]
-    pub s2par: volatile::ReadWrite<S2par>,
+    pub s2par: volatile::ReadWrite<S0par>,
     # [ doc = "0x4c - stream x memory 0 address register" ]
-    pub s2m0ar: volatile::ReadWrite<S2m0ar>,
+    pub s2m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x50 - stream x memory 1 address register" ]
-    pub s2m1ar: volatile::ReadWrite<S2m1ar>,
+    pub s2m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x54 - stream x FIFO control register" ]
-    pub s2fcr: volatile::ReadWrite<S2fcr>,
+    pub s2fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0x58 - stream x configuration register" ]
-    pub s3cr: volatile::ReadWrite<S3cr>,
+    pub s3cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0x5c - stream x number of data register" ]
-    pub s3ndtr: volatile::ReadWrite<S3ndtr>,
+    pub s3ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0x60 - stream x peripheral address register" ]
-    pub s3par: volatile::ReadWrite<S3par>,
+    pub s3par: volatile::ReadWrite<S0par>,
     # [ doc = "0x64 - stream x memory 0 address register" ]
-    pub s3m0ar: volatile::ReadWrite<S3m0ar>,
+    pub s3m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x68 - stream x memory 1 address register" ]
-    pub s3m1ar: volatile::ReadWrite<S3m1ar>,
+    pub s3m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x6c - stream x FIFO control register" ]
-    pub s3fcr: volatile::ReadWrite<S3fcr>,
+    pub s3fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0x70 - stream x configuration register" ]
-    pub s4cr: volatile::ReadWrite<S4cr>,
+    pub s4cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0x74 - stream x number of data register" ]
-    pub s4ndtr: volatile::ReadWrite<S4ndtr>,
+    pub s4ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0x78 - stream x peripheral address register" ]
-    pub s4par: volatile::ReadWrite<S4par>,
+    pub s4par: volatile::ReadWrite<S0par>,
     # [ doc = "0x7c - stream x memory 0 address register" ]
-    pub s4m0ar: volatile::ReadWrite<S4m0ar>,
+    pub s4m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x80 - stream x memory 1 address register" ]
-    pub s4m1ar: volatile::ReadWrite<S4m1ar>,
+    pub s4m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x84 - stream x FIFO control register" ]
-    pub s4fcr: volatile::ReadWrite<S4fcr>,
+    pub s4fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0x88 - stream x configuration register" ]
-    pub s5cr: volatile::ReadWrite<S5cr>,
+    pub s5cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0x8c - stream x number of data register" ]
-    pub s5ndtr: volatile::ReadWrite<S5ndtr>,
+    pub s5ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0x90 - stream x peripheral address register" ]
-    pub s5par: volatile::ReadWrite<S5par>,
+    pub s5par: volatile::ReadWrite<S0par>,
     # [ doc = "0x94 - stream x memory 0 address register" ]
-    pub s5m0ar: volatile::ReadWrite<S5m0ar>,
+    pub s5m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x98 - stream x memory 1 address register" ]
-    pub s5m1ar: volatile::ReadWrite<S5m1ar>,
+    pub s5m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0x9c - stream x FIFO control register" ]
-    pub s5fcr: volatile::ReadWrite<S5fcr>,
+    pub s5fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0xa0 - stream x configuration register" ]
-    pub s6cr: volatile::ReadWrite<S6cr>,
+    pub s6cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0xa4 - stream x number of data register" ]
-    pub s6ndtr: volatile::ReadWrite<S6ndtr>,
+    pub s6ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0xa8 - stream x peripheral address register" ]
-    pub s6par: volatile::ReadWrite<S6par>,
+    pub s6par: volatile::ReadWrite<S0par>,
     # [ doc = "0xac - stream x memory 0 address register" ]
-    pub s6m0ar: volatile::ReadWrite<S6m0ar>,
+    pub s6m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0xb0 - stream x memory 1 address register" ]
-    pub s6m1ar: volatile::ReadWrite<S6m1ar>,
+    pub s6m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0xb4 - stream x FIFO control register" ]
-    pub s6fcr: volatile::ReadWrite<S6fcr>,
+    pub s6fcr: volatile::ReadWrite<S0fcr>,
     # [ doc = "0xb8 - stream x configuration register" ]
-    pub s7cr: volatile::ReadWrite<S7cr>,
+    pub s7cr: volatile::ReadWrite<S0cr>,
     # [ doc = "0xbc - stream x number of data register" ]
-    pub s7ndtr: volatile::ReadWrite<S7ndtr>,
+    pub s7ndtr: volatile::ReadWrite<S0ndtr>,
     # [ doc = "0xc0 - stream x peripheral address register" ]
-    pub s7par: volatile::ReadWrite<S7par>,
+    pub s7par: volatile::ReadWrite<S0par>,
     # [ doc = "0xc4 - stream x memory 0 address register" ]
-    pub s7m0ar: volatile::ReadWrite<S7m0ar>,
+    pub s7m0ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0xc8 - stream x memory 1 address register" ]
-    pub s7m1ar: volatile::ReadWrite<S7m1ar>,
+    pub s7m1ar: volatile::ReadWrite<S0m0ar>,
     # [ doc = "0xcc - stream x FIFO control register" ]
-    pub s7fcr: volatile::ReadWrite<S7fcr>,
+    pub s7fcr: volatile::ReadWrite<S0fcr>,
 }
 
 # [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
