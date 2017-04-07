@@ -154,7 +154,7 @@ pub struct Hash {
     pub hash_hr7: volatile::ReadOnly<HashHr7>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cr {
     bits: u32,
@@ -241,7 +241,7 @@ impl Cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Din {
     bits: u32,
@@ -268,7 +268,7 @@ impl Din {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Str {
     bits: u32,
@@ -299,7 +299,7 @@ impl Str {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hr0 {
     bits: u32,
@@ -326,7 +326,7 @@ impl Hr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hr1 {
     bits: u32,
@@ -353,7 +353,7 @@ impl Hr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hr2 {
     bits: u32,
@@ -380,7 +380,7 @@ impl Hr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hr3 {
     bits: u32,
@@ -407,7 +407,7 @@ impl Hr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hr4 {
     bits: u32,
@@ -434,7 +434,7 @@ impl Hr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Imr {
     bits: u32,
@@ -469,7 +469,7 @@ impl Imr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sr {
     bits: u32,
@@ -512,7 +512,7 @@ impl Sr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr0 {
     bits: u32,
@@ -539,7 +539,7 @@ impl Csr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr1 {
     bits: u32,
@@ -566,7 +566,7 @@ impl Csr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr2 {
     bits: u32,
@@ -593,7 +593,7 @@ impl Csr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr3 {
     bits: u32,
@@ -620,7 +620,7 @@ impl Csr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr4 {
     bits: u32,
@@ -647,7 +647,7 @@ impl Csr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr5 {
     bits: u32,
@@ -674,7 +674,7 @@ impl Csr5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr6 {
     bits: u32,
@@ -701,7 +701,7 @@ impl Csr6 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr7 {
     bits: u32,
@@ -728,7 +728,7 @@ impl Csr7 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr8 {
     bits: u32,
@@ -755,7 +755,7 @@ impl Csr8 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr9 {
     bits: u32,
@@ -782,7 +782,7 @@ impl Csr9 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr10 {
     bits: u32,
@@ -809,7 +809,7 @@ impl Csr10 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr11 {
     bits: u32,
@@ -836,7 +836,7 @@ impl Csr11 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr12 {
     bits: u32,
@@ -863,7 +863,7 @@ impl Csr12 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr13 {
     bits: u32,
@@ -890,7 +890,7 @@ impl Csr13 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr14 {
     bits: u32,
@@ -917,7 +917,7 @@ impl Csr14 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr15 {
     bits: u32,
@@ -944,7 +944,7 @@ impl Csr15 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr16 {
     bits: u32,
@@ -971,7 +971,7 @@ impl Csr16 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr17 {
     bits: u32,
@@ -998,7 +998,7 @@ impl Csr17 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr18 {
     bits: u32,
@@ -1025,7 +1025,7 @@ impl Csr18 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr19 {
     bits: u32,
@@ -1052,7 +1052,7 @@ impl Csr19 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr20 {
     bits: u32,
@@ -1079,7 +1079,7 @@ impl Csr20 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr21 {
     bits: u32,
@@ -1106,7 +1106,7 @@ impl Csr21 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr22 {
     bits: u32,
@@ -1133,7 +1133,7 @@ impl Csr22 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr23 {
     bits: u32,
@@ -1160,7 +1160,7 @@ impl Csr23 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr24 {
     bits: u32,
@@ -1187,7 +1187,7 @@ impl Csr24 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr25 {
     bits: u32,
@@ -1214,7 +1214,7 @@ impl Csr25 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr26 {
     bits: u32,
@@ -1241,7 +1241,7 @@ impl Csr26 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr27 {
     bits: u32,
@@ -1268,7 +1268,7 @@ impl Csr27 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr28 {
     bits: u32,
@@ -1295,7 +1295,7 @@ impl Csr28 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr29 {
     bits: u32,
@@ -1322,7 +1322,7 @@ impl Csr29 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr30 {
     bits: u32,
@@ -1349,7 +1349,7 @@ impl Csr30 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr31 {
     bits: u32,
@@ -1376,7 +1376,7 @@ impl Csr31 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr32 {
     bits: u32,
@@ -1403,7 +1403,7 @@ impl Csr32 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr33 {
     bits: u32,
@@ -1430,7 +1430,7 @@ impl Csr33 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr34 {
     bits: u32,
@@ -1457,7 +1457,7 @@ impl Csr34 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr35 {
     bits: u32,
@@ -1484,7 +1484,7 @@ impl Csr35 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr36 {
     bits: u32,
@@ -1511,7 +1511,7 @@ impl Csr36 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr37 {
     bits: u32,
@@ -1538,7 +1538,7 @@ impl Csr37 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr38 {
     bits: u32,
@@ -1565,7 +1565,7 @@ impl Csr38 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr39 {
     bits: u32,
@@ -1592,7 +1592,7 @@ impl Csr39 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr40 {
     bits: u32,
@@ -1619,7 +1619,7 @@ impl Csr40 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr41 {
     bits: u32,
@@ -1646,7 +1646,7 @@ impl Csr41 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr42 {
     bits: u32,
@@ -1673,7 +1673,7 @@ impl Csr42 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr43 {
     bits: u32,
@@ -1700,7 +1700,7 @@ impl Csr43 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr44 {
     bits: u32,
@@ -1727,7 +1727,7 @@ impl Csr44 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr45 {
     bits: u32,
@@ -1754,7 +1754,7 @@ impl Csr45 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr46 {
     bits: u32,
@@ -1781,7 +1781,7 @@ impl Csr46 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr47 {
     bits: u32,
@@ -1808,7 +1808,7 @@ impl Csr47 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr48 {
     bits: u32,
@@ -1835,7 +1835,7 @@ impl Csr48 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr49 {
     bits: u32,
@@ -1862,7 +1862,7 @@ impl Csr49 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr50 {
     bits: u32,
@@ -1889,7 +1889,7 @@ impl Csr50 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr51 {
     bits: u32,
@@ -1916,7 +1916,7 @@ impl Csr51 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr52 {
     bits: u32,
@@ -1943,7 +1943,7 @@ impl Csr52 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr53 {
     bits: u32,
@@ -1970,7 +1970,7 @@ impl Csr53 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr0 {
     bits: u32,
@@ -1997,7 +1997,7 @@ impl HashHr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr1 {
     bits: u32,
@@ -2024,7 +2024,7 @@ impl HashHr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr2 {
     bits: u32,
@@ -2051,7 +2051,7 @@ impl HashHr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr3 {
     bits: u32,
@@ -2078,7 +2078,7 @@ impl HashHr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr4 {
     bits: u32,
@@ -2105,7 +2105,7 @@ impl HashHr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr5 {
     bits: u32,
@@ -2132,7 +2132,7 @@ impl HashHr5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr6 {
     bits: u32,
@@ -2159,7 +2159,7 @@ impl HashHr6 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct HashHr7 {
     bits: u32,

@@ -14,7 +14,7 @@ pub struct Rng {
     pub dr: volatile::ReadOnly<Dr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cr {
     bits: u32,
@@ -49,7 +49,7 @@ impl Cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sr {
     bits: u32,
@@ -96,7 +96,7 @@ impl Sr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dr {
     bits: u32,

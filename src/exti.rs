@@ -20,7 +20,7 @@ pub struct Exti {
     pub pr: volatile::ReadWrite<Pr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Imr {
     bits: u32,
@@ -223,7 +223,7 @@ impl Imr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Emr {
     bits: u32,
@@ -426,7 +426,7 @@ impl Emr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rtsr {
     bits: u32,
@@ -629,7 +629,7 @@ impl Rtsr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ftsr {
     bits: u32,
@@ -832,7 +832,7 @@ impl Ftsr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Swier {
     bits: u32,
@@ -1035,7 +1035,7 @@ impl Swier {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Pr {
     bits: u32,

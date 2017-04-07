@@ -63,7 +63,7 @@ pub struct Fmc {
     pub sdsr: volatile::ReadOnly<Sdsr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bcr1 {
     bits: u32,
@@ -194,7 +194,7 @@ impl Bcr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Btr1 {
     bits: u32,
@@ -269,7 +269,7 @@ impl Btr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bcr2 {
     bits: u32,
@@ -400,7 +400,7 @@ impl Bcr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Btr2 {
     bits: u32,
@@ -475,7 +475,7 @@ impl Btr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bcr3 {
     bits: u32,
@@ -606,7 +606,7 @@ impl Bcr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Btr3 {
     bits: u32,
@@ -681,7 +681,7 @@ impl Btr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bcr4 {
     bits: u32,
@@ -812,7 +812,7 @@ impl Bcr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Btr4 {
     bits: u32,
@@ -887,7 +887,7 @@ impl Btr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Pcr {
     bits: u32,
@@ -970,7 +970,7 @@ impl Pcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sr {
     bits: u32,
@@ -1041,7 +1041,7 @@ impl Sr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Pmem {
     bits: u32,
@@ -1092,7 +1092,7 @@ impl Pmem {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Patt {
     bits: u32,
@@ -1143,7 +1143,7 @@ impl Patt {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Eccr {
     bits: u32,
@@ -1170,7 +1170,7 @@ impl Eccr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bwtr1 {
     bits: u32,
@@ -1237,7 +1237,7 @@ impl Bwtr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bwtr2 {
     bits: u32,
@@ -1304,7 +1304,7 @@ impl Bwtr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bwtr3 {
     bits: u32,
@@ -1371,7 +1371,7 @@ impl Bwtr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bwtr4 {
     bits: u32,
@@ -1438,7 +1438,7 @@ impl Bwtr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdcr1 {
     bits: u32,
@@ -1529,7 +1529,7 @@ impl Sdcr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdcr2 {
     bits: u32,
@@ -1620,7 +1620,7 @@ impl Sdcr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdtr1 {
     bits: u32,
@@ -1695,7 +1695,7 @@ impl Sdtr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdtr2 {
     bits: u32,
@@ -1770,7 +1770,7 @@ impl Sdtr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdcmr {
     bits: u32,
@@ -1817,7 +1817,7 @@ impl Sdcmr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdrtr {
     bits: u32,
@@ -1856,7 +1856,7 @@ impl Sdrtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sdsr {
     bits: u32,

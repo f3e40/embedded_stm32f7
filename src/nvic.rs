@@ -92,7 +92,7 @@ pub struct Nvic {
     pub stir: volatile::WriteOnly<Stir>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ictr {
     bits: u32,
@@ -119,7 +119,7 @@ impl Ictr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iser0 {
     bits: u32,
@@ -146,7 +146,7 @@ impl Iser0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iser1 {
     bits: u32,
@@ -173,7 +173,7 @@ impl Iser1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iser2 {
     bits: u32,
@@ -200,7 +200,7 @@ impl Iser2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Icer0 {
     bits: u32,
@@ -227,7 +227,7 @@ impl Icer0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Icer1 {
     bits: u32,
@@ -254,7 +254,7 @@ impl Icer1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Icer2 {
     bits: u32,
@@ -281,7 +281,7 @@ impl Icer2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ispr0 {
     bits: u32,
@@ -308,7 +308,7 @@ impl Ispr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ispr1 {
     bits: u32,
@@ -335,7 +335,7 @@ impl Ispr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ispr2 {
     bits: u32,
@@ -362,7 +362,7 @@ impl Ispr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Icpr0 {
     bits: u32,
@@ -389,7 +389,7 @@ impl Icpr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Icpr1 {
     bits: u32,
@@ -416,7 +416,7 @@ impl Icpr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Icpr2 {
     bits: u32,
@@ -443,7 +443,7 @@ impl Icpr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iabr0 {
     bits: u32,
@@ -470,7 +470,7 @@ impl Iabr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iabr1 {
     bits: u32,
@@ -497,7 +497,7 @@ impl Iabr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iabr2 {
     bits: u32,
@@ -524,7 +524,7 @@ impl Iabr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr0 {
     bits: u32,
@@ -575,7 +575,7 @@ impl Ipr0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr1 {
     bits: u32,
@@ -626,7 +626,7 @@ impl Ipr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr2 {
     bits: u32,
@@ -677,7 +677,7 @@ impl Ipr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr3 {
     bits: u32,
@@ -728,7 +728,7 @@ impl Ipr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr4 {
     bits: u32,
@@ -779,7 +779,7 @@ impl Ipr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr5 {
     bits: u32,
@@ -830,7 +830,7 @@ impl Ipr5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr6 {
     bits: u32,
@@ -881,7 +881,7 @@ impl Ipr6 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr7 {
     bits: u32,
@@ -932,7 +932,7 @@ impl Ipr7 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr8 {
     bits: u32,
@@ -983,7 +983,7 @@ impl Ipr8 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr9 {
     bits: u32,
@@ -1034,7 +1034,7 @@ impl Ipr9 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr10 {
     bits: u32,
@@ -1085,7 +1085,7 @@ impl Ipr10 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr11 {
     bits: u32,
@@ -1136,7 +1136,7 @@ impl Ipr11 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr12 {
     bits: u32,
@@ -1187,7 +1187,7 @@ impl Ipr12 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr13 {
     bits: u32,
@@ -1238,7 +1238,7 @@ impl Ipr13 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr14 {
     bits: u32,
@@ -1289,7 +1289,7 @@ impl Ipr14 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr15 {
     bits: u32,
@@ -1340,7 +1340,7 @@ impl Ipr15 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr16 {
     bits: u32,
@@ -1391,7 +1391,7 @@ impl Ipr16 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr17 {
     bits: u32,
@@ -1442,7 +1442,7 @@ impl Ipr17 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr18 {
     bits: u32,
@@ -1493,7 +1493,7 @@ impl Ipr18 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr19 {
     bits: u32,
@@ -1544,7 +1544,7 @@ impl Ipr19 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ipr20 {
     bits: u32,
@@ -1595,7 +1595,7 @@ impl Ipr20 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Stir {
     bits: u32,

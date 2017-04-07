@@ -37,7 +37,7 @@ pub struct EthernetDma {
     pub dmachrbar: volatile::ReadOnly<Dmachrbar>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmabmr {
     bits: u32,
@@ -152,7 +152,7 @@ impl Dmabmr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmatpdr {
     bits: u32,
@@ -179,7 +179,7 @@ impl Dmatpdr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmarpdr {
     bits: u32,
@@ -206,7 +206,7 @@ impl Dmarpdr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmardlar {
     bits: u32,
@@ -233,7 +233,7 @@ impl Dmardlar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmatdlar {
     bits: u32,
@@ -260,7 +260,7 @@ impl Dmatdlar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmasr {
     bits: u32,
@@ -423,7 +423,7 @@ impl Dmasr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmaomr {
     bits: u32,
@@ -538,7 +538,7 @@ impl Dmaomr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmaier {
     bits: u32,
@@ -677,7 +677,7 @@ impl Dmaier {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmamfbocr {
     bits: u32,
@@ -728,7 +728,7 @@ impl Dmamfbocr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmarswtr {
     bits: u32,
@@ -755,7 +755,7 @@ impl Dmarswtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmachtdr {
     bits: u32,
@@ -782,7 +782,7 @@ impl Dmachtdr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmachrdr {
     bits: u32,
@@ -809,7 +809,7 @@ impl Dmachrdr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmachtbar {
     bits: u32,
@@ -836,7 +836,7 @@ impl Dmachtbar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmachrbar {
     bits: u32,

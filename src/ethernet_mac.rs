@@ -52,7 +52,7 @@ pub struct EthernetMac {
     pub macrwuffer: volatile::ReadWrite<Macrwuffer>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maccr {
     bits: u32,
@@ -199,7 +199,7 @@ impl Maccr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macffr {
     bits: u32,
@@ -306,7 +306,7 @@ impl Macffr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Machthr {
     bits: u32,
@@ -333,7 +333,7 @@ impl Machthr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Machtlr {
     bits: u32,
@@ -360,7 +360,7 @@ impl Machtlr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macmiiar {
     bits: u32,
@@ -419,7 +419,7 @@ impl Macmiiar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macmiidr {
     bits: u32,
@@ -446,7 +446,7 @@ impl Macmiidr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macfcr {
     bits: u32,
@@ -521,7 +521,7 @@ impl Macfcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macvlantr {
     bits: u32,
@@ -556,7 +556,7 @@ impl Macvlantr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macpmtcsr {
     bits: u32,
@@ -631,7 +631,7 @@ impl Macpmtcsr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macdbgr {
     bits: u32,
@@ -698,7 +698,7 @@ impl Macdbgr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macsr {
     bits: u32,
@@ -741,7 +741,7 @@ impl Macsr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macimr {
     bits: u32,
@@ -776,7 +776,7 @@ impl Macimr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca0hr {
     bits: u32,
@@ -807,7 +807,7 @@ impl Maca0hr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca0lr {
     bits: u32,
@@ -834,7 +834,7 @@ impl Maca0lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca1hr {
     bits: u32,
@@ -885,7 +885,7 @@ impl Maca1hr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca1lr {
     bits: u32,
@@ -912,7 +912,7 @@ impl Maca1lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca2hr {
     bits: u32,
@@ -963,7 +963,7 @@ impl Maca2hr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca2lr {
     bits: u32,
@@ -990,7 +990,7 @@ impl Maca2lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca3hr {
     bits: u32,
@@ -1041,7 +1041,7 @@ impl Maca3hr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Maca3lr {
     bits: u32,
@@ -1068,7 +1068,7 @@ impl Maca3lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Macrwuffer {
     bits: u32,

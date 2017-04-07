@@ -112,7 +112,7 @@ pub struct Dma {
     pub s7fcr: volatile::ReadWrite<S7fcr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Lisr {
     bits: u32,
@@ -291,7 +291,7 @@ impl Lisr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hisr {
     bits: u32,
@@ -470,7 +470,7 @@ impl Hisr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Lifcr {
     bits: u32,
@@ -649,7 +649,7 @@ impl Lifcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Hifcr {
     bits: u32,
@@ -828,7 +828,7 @@ impl Hifcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S0cr {
     bits: u32,
@@ -999,7 +999,7 @@ impl S0cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S0ndtr {
     bits: u32,
@@ -1026,7 +1026,7 @@ impl S0ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S0par {
     bits: u32,
@@ -1053,7 +1053,7 @@ impl S0par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S0m0ar {
     bits: u32,
@@ -1080,7 +1080,7 @@ impl S0m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S0m1ar {
     bits: u32,
@@ -1107,7 +1107,7 @@ impl S0m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S0fcr {
     bits: u32,
@@ -1154,7 +1154,7 @@ impl S0fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S1cr {
     bits: u32,
@@ -1325,7 +1325,7 @@ impl S1cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S1ndtr {
     bits: u32,
@@ -1352,7 +1352,7 @@ impl S1ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S1par {
     bits: u32,
@@ -1379,7 +1379,7 @@ impl S1par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S1m0ar {
     bits: u32,
@@ -1406,7 +1406,7 @@ impl S1m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S1m1ar {
     bits: u32,
@@ -1433,7 +1433,7 @@ impl S1m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S1fcr {
     bits: u32,
@@ -1480,7 +1480,7 @@ impl S1fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S2cr {
     bits: u32,
@@ -1659,7 +1659,7 @@ impl S2cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S2ndtr {
     bits: u32,
@@ -1686,7 +1686,7 @@ impl S2ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S2par {
     bits: u32,
@@ -1713,7 +1713,7 @@ impl S2par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S2m0ar {
     bits: u32,
@@ -1740,7 +1740,7 @@ impl S2m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S2m1ar {
     bits: u32,
@@ -1767,7 +1767,7 @@ impl S2m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S2fcr {
     bits: u32,
@@ -1814,7 +1814,7 @@ impl S2fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S3cr {
     bits: u32,
@@ -1993,7 +1993,7 @@ impl S3cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S3ndtr {
     bits: u32,
@@ -2020,7 +2020,7 @@ impl S3ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S3par {
     bits: u32,
@@ -2047,7 +2047,7 @@ impl S3par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S3m0ar {
     bits: u32,
@@ -2074,7 +2074,7 @@ impl S3m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S3m1ar {
     bits: u32,
@@ -2101,7 +2101,7 @@ impl S3m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S3fcr {
     bits: u32,
@@ -2148,7 +2148,7 @@ impl S3fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S4cr {
     bits: u32,
@@ -2327,7 +2327,7 @@ impl S4cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S4ndtr {
     bits: u32,
@@ -2354,7 +2354,7 @@ impl S4ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S4par {
     bits: u32,
@@ -2381,7 +2381,7 @@ impl S4par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S4m0ar {
     bits: u32,
@@ -2408,7 +2408,7 @@ impl S4m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S4m1ar {
     bits: u32,
@@ -2435,7 +2435,7 @@ impl S4m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S4fcr {
     bits: u32,
@@ -2482,7 +2482,7 @@ impl S4fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S5cr {
     bits: u32,
@@ -2661,7 +2661,7 @@ impl S5cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S5ndtr {
     bits: u32,
@@ -2688,7 +2688,7 @@ impl S5ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S5par {
     bits: u32,
@@ -2715,7 +2715,7 @@ impl S5par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S5m0ar {
     bits: u32,
@@ -2742,7 +2742,7 @@ impl S5m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S5m1ar {
     bits: u32,
@@ -2769,7 +2769,7 @@ impl S5m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S5fcr {
     bits: u32,
@@ -2816,7 +2816,7 @@ impl S5fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S6cr {
     bits: u32,
@@ -2995,7 +2995,7 @@ impl S6cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S6ndtr {
     bits: u32,
@@ -3022,7 +3022,7 @@ impl S6ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S6par {
     bits: u32,
@@ -3049,7 +3049,7 @@ impl S6par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S6m0ar {
     bits: u32,
@@ -3076,7 +3076,7 @@ impl S6m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S6m1ar {
     bits: u32,
@@ -3103,7 +3103,7 @@ impl S6m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S6fcr {
     bits: u32,
@@ -3150,7 +3150,7 @@ impl S6fcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S7cr {
     bits: u32,
@@ -3329,7 +3329,7 @@ impl S7cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S7ndtr {
     bits: u32,
@@ -3356,7 +3356,7 @@ impl S7ndtr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S7par {
     bits: u32,
@@ -3383,7 +3383,7 @@ impl S7par {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S7m0ar {
     bits: u32,
@@ -3410,7 +3410,7 @@ impl S7m0ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S7m1ar {
     bits: u32,
@@ -3437,7 +3437,7 @@ impl S7m1ar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct S7fcr {
     bits: u32,

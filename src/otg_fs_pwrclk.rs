@@ -10,7 +10,7 @@ pub struct OtgFsPwrclk {
     pub otg_fs_pcgcctl: volatile::ReadWrite<OtgFsPcgcctl>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsPcgcctl {
     bits: u32,

@@ -16,7 +16,7 @@ pub struct Pwr {
     pub csr2: volatile::ReadWrite<Csr2>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cr1 {
     bits: u32,
@@ -147,7 +147,7 @@ impl Cr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr1 {
     bits: u32,
@@ -222,7 +222,7 @@ impl Csr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cr2 {
     bits: u32,
@@ -313,7 +313,7 @@ impl Cr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr2 {
     bits: u32,

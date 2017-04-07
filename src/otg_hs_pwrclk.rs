@@ -10,7 +10,7 @@ pub struct OtgHsPwrclk {
     pub otg_hs_pcgcr: volatile::ReadWrite<OtgHsPcgcr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgHsPcgcr {
     bits: u32,

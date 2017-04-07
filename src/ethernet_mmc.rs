@@ -34,7 +34,7 @@ pub struct EthernetMmc {
     pub mmcrgufcr: volatile::ReadOnly<Mmcrgufcr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmccr {
     bits: u32,
@@ -101,7 +101,7 @@ impl Mmccr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmcrir {
     bits: u32,
@@ -144,7 +144,7 @@ impl Mmcrir {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmctir {
     bits: u32,
@@ -187,7 +187,7 @@ impl Mmctir {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmcrimr {
     bits: u32,
@@ -230,7 +230,7 @@ impl Mmcrimr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmctimr {
     bits: u32,
@@ -273,7 +273,7 @@ impl Mmctimr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmctgfsccr {
     bits: u32,
@@ -300,7 +300,7 @@ impl Mmctgfsccr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmctgfmsccr {
     bits: u32,
@@ -327,7 +327,7 @@ impl Mmctgfmsccr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmctgfcr {
     bits: u32,
@@ -354,7 +354,7 @@ impl Mmctgfcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmcrfcecr {
     bits: u32,
@@ -381,7 +381,7 @@ impl Mmcrfcecr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmcrfaecr {
     bits: u32,
@@ -408,7 +408,7 @@ impl Mmcrfaecr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mmcrgufcr {
     bits: u32,

@@ -31,7 +31,7 @@ pub struct EthernetPtp {
     pub ptpppscr: volatile::ReadOnly<Ptpppscr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptscr {
     bits: u32,
@@ -178,7 +178,7 @@ impl Ptptscr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptpssir {
     bits: u32,
@@ -205,7 +205,7 @@ impl Ptpssir {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptshr {
     bits: u32,
@@ -232,7 +232,7 @@ impl Ptptshr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptslr {
     bits: u32,
@@ -267,7 +267,7 @@ impl Ptptslr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptshur {
     bits: u32,
@@ -294,7 +294,7 @@ impl Ptptshur {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptslur {
     bits: u32,
@@ -329,7 +329,7 @@ impl Ptptslur {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptsar {
     bits: u32,
@@ -356,7 +356,7 @@ impl Ptptsar {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptthr {
     bits: u32,
@@ -383,7 +383,7 @@ impl Ptptthr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptpttlr {
     bits: u32,
@@ -410,7 +410,7 @@ impl Ptpttlr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptptssr {
     bits: u32,
@@ -445,7 +445,7 @@ impl Ptptssr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ptpppscr {
     bits: u32,

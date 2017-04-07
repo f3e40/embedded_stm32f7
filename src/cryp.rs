@@ -80,7 +80,7 @@ pub struct Cryp {
     pub csgcm7r: volatile::ReadWrite<Csgcm7r>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cr {
     bits: u32,
@@ -159,7 +159,7 @@ impl Cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sr {
     bits: u32,
@@ -218,7 +218,7 @@ impl Sr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Din {
     bits: u32,
@@ -245,7 +245,7 @@ impl Din {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dout {
     bits: u32,
@@ -272,7 +272,7 @@ impl Dout {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dmacr {
     bits: u32,
@@ -307,7 +307,7 @@ impl Dmacr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Imscr {
     bits: u32,
@@ -342,7 +342,7 @@ impl Imscr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Risr {
     bits: u32,
@@ -377,7 +377,7 @@ impl Risr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Misr {
     bits: u32,
@@ -412,7 +412,7 @@ impl Misr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K0lr {
     bits: u32,
@@ -687,7 +687,7 @@ impl K0lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K0rr {
     bits: u32,
@@ -962,7 +962,7 @@ impl K0rr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K1lr {
     bits: u32,
@@ -1237,7 +1237,7 @@ impl K1lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K1rr {
     bits: u32,
@@ -1512,7 +1512,7 @@ impl K1rr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K2lr {
     bits: u32,
@@ -1787,7 +1787,7 @@ impl K2lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K2rr {
     bits: u32,
@@ -2062,7 +2062,7 @@ impl K2rr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K3lr {
     bits: u32,
@@ -2337,7 +2337,7 @@ impl K3lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct K3rr {
     bits: u32,
@@ -2612,7 +2612,7 @@ impl K3rr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iv0lr {
     bits: u32,
@@ -2887,7 +2887,7 @@ impl Iv0lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iv0rr {
     bits: u32,
@@ -3162,7 +3162,7 @@ impl Iv0rr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iv1lr {
     bits: u32,
@@ -3437,7 +3437,7 @@ impl Iv1lr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Iv1rr {
     bits: u32,
@@ -3712,7 +3712,7 @@ impl Iv1rr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm0r {
     bits: u32,
@@ -3739,7 +3739,7 @@ impl Csgcmccm0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm1r {
     bits: u32,
@@ -3766,7 +3766,7 @@ impl Csgcmccm1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm2r {
     bits: u32,
@@ -3793,7 +3793,7 @@ impl Csgcmccm2r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm3r {
     bits: u32,
@@ -3820,7 +3820,7 @@ impl Csgcmccm3r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm4r {
     bits: u32,
@@ -3847,7 +3847,7 @@ impl Csgcmccm4r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm5r {
     bits: u32,
@@ -3874,7 +3874,7 @@ impl Csgcmccm5r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm6r {
     bits: u32,
@@ -3901,7 +3901,7 @@ impl Csgcmccm6r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcmccm7r {
     bits: u32,
@@ -3928,7 +3928,7 @@ impl Csgcmccm7r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm0r {
     bits: u32,
@@ -3955,7 +3955,7 @@ impl Csgcm0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm1r {
     bits: u32,
@@ -3982,7 +3982,7 @@ impl Csgcm1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm2r {
     bits: u32,
@@ -4009,7 +4009,7 @@ impl Csgcm2r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm3r {
     bits: u32,
@@ -4036,7 +4036,7 @@ impl Csgcm3r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm4r {
     bits: u32,
@@ -4063,7 +4063,7 @@ impl Csgcm4r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm5r {
     bits: u32,
@@ -4090,7 +4090,7 @@ impl Csgcm5r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm6r {
     bits: u32,
@@ -4117,7 +4117,7 @@ impl Csgcm6r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csgcm7r {
     bits: u32,

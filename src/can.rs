@@ -192,7 +192,7 @@ pub struct Can {
     pub f27r2: volatile::ReadWrite<F27r2>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Mcr {
     bits: u32,
@@ -291,7 +291,7 @@ impl Mcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Msr {
     bits: u32,
@@ -358,7 +358,7 @@ impl Msr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tsr {
     bits: u32,
@@ -525,7 +525,7 @@ impl Tsr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rf0r {
     bits: u32,
@@ -572,7 +572,7 @@ impl Rf0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rf1r {
     bits: u32,
@@ -619,7 +619,7 @@ impl Rf1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ier {
     bits: u32,
@@ -750,7 +750,7 @@ impl Ier {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Esr {
     bits: u32,
@@ -797,7 +797,7 @@ impl Esr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Btr {
     bits: u32,
@@ -864,7 +864,7 @@ impl Btr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ti0r {
     bits: u32,
@@ -923,7 +923,7 @@ impl Ti0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdt0r {
     bits: u32,
@@ -966,7 +966,7 @@ impl Tdt0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdl0r {
     bits: u32,
@@ -1017,7 +1017,7 @@ impl Tdl0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdh0r {
     bits: u32,
@@ -1068,7 +1068,7 @@ impl Tdh0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ti1r {
     bits: u32,
@@ -1127,7 +1127,7 @@ impl Ti1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdt1r {
     bits: u32,
@@ -1170,7 +1170,7 @@ impl Tdt1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdl1r {
     bits: u32,
@@ -1221,7 +1221,7 @@ impl Tdl1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdh1r {
     bits: u32,
@@ -1272,7 +1272,7 @@ impl Tdh1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ti2r {
     bits: u32,
@@ -1331,7 +1331,7 @@ impl Ti2r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdt2r {
     bits: u32,
@@ -1374,7 +1374,7 @@ impl Tdt2r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdl2r {
     bits: u32,
@@ -1425,7 +1425,7 @@ impl Tdl2r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Tdh2r {
     bits: u32,
@@ -1476,7 +1476,7 @@ impl Tdh2r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ri0r {
     bits: u32,
@@ -1527,7 +1527,7 @@ impl Ri0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rdt0r {
     bits: u32,
@@ -1570,7 +1570,7 @@ impl Rdt0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rdl0r {
     bits: u32,
@@ -1621,7 +1621,7 @@ impl Rdl0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rdh0r {
     bits: u32,
@@ -1672,7 +1672,7 @@ impl Rdh0r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ri1r {
     bits: u32,
@@ -1723,7 +1723,7 @@ impl Ri1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rdt1r {
     bits: u32,
@@ -1766,7 +1766,7 @@ impl Rdt1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rdl1r {
     bits: u32,
@@ -1817,7 +1817,7 @@ impl Rdl1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Rdh1r {
     bits: u32,
@@ -1868,7 +1868,7 @@ impl Rdh1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Fmr {
     bits: u32,
@@ -1903,7 +1903,7 @@ impl Fmr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Fm1r {
     bits: u32,
@@ -2146,7 +2146,7 @@ impl Fm1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Fs1r {
     bits: u32,
@@ -2389,7 +2389,7 @@ impl Fs1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ffa1r {
     bits: u32,
@@ -2632,7 +2632,7 @@ impl Ffa1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Fa1r {
     bits: u32,
@@ -2875,7 +2875,7 @@ impl Fa1r {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F0r1 {
     bits: u32,
@@ -3150,7 +3150,7 @@ impl F0r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F0r2 {
     bits: u32,
@@ -3425,7 +3425,7 @@ impl F0r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F1r1 {
     bits: u32,
@@ -3700,7 +3700,7 @@ impl F1r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F1r2 {
     bits: u32,
@@ -3975,7 +3975,7 @@ impl F1r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F2r1 {
     bits: u32,
@@ -4250,7 +4250,7 @@ impl F2r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F2r2 {
     bits: u32,
@@ -4525,7 +4525,7 @@ impl F2r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F3r1 {
     bits: u32,
@@ -4800,7 +4800,7 @@ impl F3r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F3r2 {
     bits: u32,
@@ -5075,7 +5075,7 @@ impl F3r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F4r1 {
     bits: u32,
@@ -5350,7 +5350,7 @@ impl F4r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F4r2 {
     bits: u32,
@@ -5625,7 +5625,7 @@ impl F4r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F5r1 {
     bits: u32,
@@ -5900,7 +5900,7 @@ impl F5r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F5r2 {
     bits: u32,
@@ -6175,7 +6175,7 @@ impl F5r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F6r1 {
     bits: u32,
@@ -6450,7 +6450,7 @@ impl F6r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F6r2 {
     bits: u32,
@@ -6725,7 +6725,7 @@ impl F6r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F7r1 {
     bits: u32,
@@ -7000,7 +7000,7 @@ impl F7r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F7r2 {
     bits: u32,
@@ -7275,7 +7275,7 @@ impl F7r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F8r1 {
     bits: u32,
@@ -7550,7 +7550,7 @@ impl F8r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F8r2 {
     bits: u32,
@@ -7825,7 +7825,7 @@ impl F8r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F9r1 {
     bits: u32,
@@ -8100,7 +8100,7 @@ impl F9r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F9r2 {
     bits: u32,
@@ -8375,7 +8375,7 @@ impl F9r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F10r1 {
     bits: u32,
@@ -8650,7 +8650,7 @@ impl F10r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F10r2 {
     bits: u32,
@@ -8925,7 +8925,7 @@ impl F10r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F11r1 {
     bits: u32,
@@ -9200,7 +9200,7 @@ impl F11r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F11r2 {
     bits: u32,
@@ -9475,7 +9475,7 @@ impl F11r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F12r1 {
     bits: u32,
@@ -9750,7 +9750,7 @@ impl F12r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F12r2 {
     bits: u32,
@@ -10025,7 +10025,7 @@ impl F12r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F13r1 {
     bits: u32,
@@ -10300,7 +10300,7 @@ impl F13r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F13r2 {
     bits: u32,
@@ -10575,7 +10575,7 @@ impl F13r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F14r1 {
     bits: u32,
@@ -10850,7 +10850,7 @@ impl F14r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F14r2 {
     bits: u32,
@@ -11125,7 +11125,7 @@ impl F14r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F15r1 {
     bits: u32,
@@ -11400,7 +11400,7 @@ impl F15r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F15r2 {
     bits: u32,
@@ -11675,7 +11675,7 @@ impl F15r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F16r1 {
     bits: u32,
@@ -11950,7 +11950,7 @@ impl F16r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F16r2 {
     bits: u32,
@@ -12225,7 +12225,7 @@ impl F16r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F17r1 {
     bits: u32,
@@ -12500,7 +12500,7 @@ impl F17r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F17r2 {
     bits: u32,
@@ -12775,7 +12775,7 @@ impl F17r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F18r1 {
     bits: u32,
@@ -13050,7 +13050,7 @@ impl F18r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F18r2 {
     bits: u32,
@@ -13325,7 +13325,7 @@ impl F18r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F19r1 {
     bits: u32,
@@ -13600,7 +13600,7 @@ impl F19r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F19r2 {
     bits: u32,
@@ -13875,7 +13875,7 @@ impl F19r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F20r1 {
     bits: u32,
@@ -14150,7 +14150,7 @@ impl F20r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F20r2 {
     bits: u32,
@@ -14425,7 +14425,7 @@ impl F20r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F21r1 {
     bits: u32,
@@ -14700,7 +14700,7 @@ impl F21r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F21r2 {
     bits: u32,
@@ -14975,7 +14975,7 @@ impl F21r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F22r1 {
     bits: u32,
@@ -15250,7 +15250,7 @@ impl F22r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F22r2 {
     bits: u32,
@@ -15525,7 +15525,7 @@ impl F22r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F23r1 {
     bits: u32,
@@ -15800,7 +15800,7 @@ impl F23r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F23r2 {
     bits: u32,
@@ -16075,7 +16075,7 @@ impl F23r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F24r1 {
     bits: u32,
@@ -16350,7 +16350,7 @@ impl F24r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F24r2 {
     bits: u32,
@@ -16625,7 +16625,7 @@ impl F24r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F25r1 {
     bits: u32,
@@ -16900,7 +16900,7 @@ impl F25r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F25r2 {
     bits: u32,
@@ -17175,7 +17175,7 @@ impl F25r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F26r1 {
     bits: u32,
@@ -17450,7 +17450,7 @@ impl F26r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F26r2 {
     bits: u32,
@@ -17725,7 +17725,7 @@ impl F26r2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F27r1 {
     bits: u32,
@@ -18000,7 +18000,7 @@ impl F27r1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct F27r2 {
     bits: u32,

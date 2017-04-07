@@ -23,7 +23,7 @@ pub struct Syscfg {
     pub cmpcr: volatile::ReadOnly<Cmpcr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Memrm {
     bits: u32,
@@ -66,7 +66,7 @@ impl Memrm {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Pmc {
     bits: u32,
@@ -117,7 +117,7 @@ impl Pmc {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Exticr1 {
     bits: u32,
@@ -168,7 +168,7 @@ impl Exticr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Exticr2 {
     bits: u32,
@@ -219,7 +219,7 @@ impl Exticr2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Exticr3 {
     bits: u32,
@@ -270,7 +270,7 @@ impl Exticr3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Exticr4 {
     bits: u32,
@@ -321,7 +321,7 @@ impl Exticr4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cmpcr {
     bits: u32,

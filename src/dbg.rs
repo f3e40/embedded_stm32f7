@@ -16,7 +16,7 @@ pub struct Dbg {
     pub dbgmcu_apb2_fz: volatile::ReadWrite<DbgmcuApb2Fz>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct DbgmcuIdcode {
     bits: u32,
@@ -51,7 +51,7 @@ impl DbgmcuIdcode {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct DbgmcuCr {
     bits: u32,
@@ -110,7 +110,7 @@ impl DbgmcuCr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct DbgmcuApb1Fz {
     bits: u32,
@@ -257,7 +257,7 @@ impl DbgmcuApb1Fz {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct DbgmcuApb2Fz {
     bits: u32,

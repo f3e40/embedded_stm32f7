@@ -14,7 +14,7 @@ pub struct CAdc {
     pub cdr: volatile::ReadOnly<Cdr>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr {
     bits: u32,
@@ -177,7 +177,7 @@ impl Csr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ccr {
     bits: u32,
@@ -252,7 +252,7 @@ impl Ccr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cdr {
     bits: u32,

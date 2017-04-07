@@ -67,7 +67,7 @@ pub struct Rcc {
     pub dkcfgr2: volatile::ReadWrite<Dkcfgr2>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cr {
     bits: u32,
@@ -174,7 +174,7 @@ impl Cr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Pllcfgr {
     bits: u32,
@@ -233,7 +233,7 @@ impl Pllcfgr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cfgr {
     bits: u32,
@@ -336,7 +336,7 @@ impl Cfgr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Cir {
     bits: u32,
@@ -475,7 +475,7 @@ impl Cir {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb1rstr {
     bits: u32,
@@ -630,7 +630,7 @@ impl Ahb1rstr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb2rstr {
     bits: u32,
@@ -689,7 +689,7 @@ impl Ahb2rstr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb3rstr {
     bits: u32,
@@ -724,7 +724,7 @@ impl Ahb3rstr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Apb1rstr {
     bits: u32,
@@ -975,7 +975,7 @@ impl Apb1rstr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Apb2rstr {
     bits: u32,
@@ -1130,7 +1130,7 @@ impl Apb2rstr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb1enr {
     bits: u32,
@@ -1333,7 +1333,7 @@ impl Ahb1enr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb2enr {
     bits: u32,
@@ -1392,7 +1392,7 @@ impl Ahb2enr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb3enr {
     bits: u32,
@@ -1427,7 +1427,7 @@ impl Ahb3enr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Apb1enr {
     bits: u32,
@@ -1678,7 +1678,7 @@ impl Apb1enr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Apb2enr {
     bits: u32,
@@ -1849,7 +1849,7 @@ impl Apb2enr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb1lpenr {
     bits: u32,
@@ -2076,7 +2076,7 @@ impl Ahb1lpenr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb2lpenr {
     bits: u32,
@@ -2135,7 +2135,7 @@ impl Ahb2lpenr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Ahb3lpenr {
     bits: u32,
@@ -2170,7 +2170,7 @@ impl Ahb3lpenr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Apb1lpenr {
     bits: u32,
@@ -2421,7 +2421,7 @@ impl Apb1lpenr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Apb2lpenr {
     bits: u32,
@@ -2592,7 +2592,7 @@ impl Apb2lpenr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Bdcr {
     bits: u32,
@@ -2663,7 +2663,7 @@ impl Bdcr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Csr {
     bits: u32,
@@ -2758,7 +2758,7 @@ impl Csr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Sscgr {
     bits: u32,
@@ -2809,7 +2809,7 @@ impl Sscgr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Plli2scfgr {
     bits: u32,
@@ -2852,7 +2852,7 @@ impl Plli2scfgr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Pllsaicfgr {
     bits: u32,
@@ -2903,7 +2903,7 @@ impl Pllsaicfgr {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dkcfgr1 {
     bits: u32,
@@ -2970,7 +2970,7 @@ impl Dkcfgr1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct Dkcfgr2 {
     bits: u32,

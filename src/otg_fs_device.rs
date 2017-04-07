@@ -156,7 +156,7 @@ pub struct OtgFsDevice {
     pub otg_fs_doeptsiz5: volatile::ReadWrite<OtgFsDoeptsiz5>,
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDcfg {
     bits: u32,
@@ -207,7 +207,7 @@ impl OtgFsDcfg {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDctl {
     bits: u32,
@@ -298,7 +298,7 @@ impl OtgFsDctl {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDsts {
     bits: u32,
@@ -349,7 +349,7 @@ impl OtgFsDsts {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepmsk {
     bits: u32,
@@ -416,7 +416,7 @@ impl OtgFsDiepmsk {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepmsk {
     bits: u32,
@@ -467,7 +467,7 @@ impl OtgFsDoepmsk {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDaint {
     bits: u32,
@@ -502,7 +502,7 @@ impl OtgFsDaint {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDaintmsk {
     bits: u32,
@@ -537,7 +537,7 @@ impl OtgFsDaintmsk {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDvbusdis {
     bits: u32,
@@ -564,7 +564,7 @@ impl OtgFsDvbusdis {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDvbuspulse {
     bits: u32,
@@ -591,7 +591,7 @@ impl OtgFsDvbuspulse {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepempmsk {
     bits: u32,
@@ -618,7 +618,7 @@ impl OtgFsDiepempmsk {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepctl0 {
     bits: u32,
@@ -689,7 +689,7 @@ impl OtgFsDiepctl0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepint0 {
     bits: u32,
@@ -752,7 +752,7 @@ impl OtgFsDiepint0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDieptsiz0 {
     bits: u32,
@@ -787,7 +787,7 @@ impl OtgFsDieptsiz0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDtxfsts0 {
     bits: u32,
@@ -814,7 +814,7 @@ impl OtgFsDtxfsts0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepctl1 {
     bits: u32,
@@ -913,7 +913,7 @@ impl OtgFsDiepctl1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepint1 {
     bits: u32,
@@ -976,7 +976,7 @@ impl OtgFsDiepint1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDieptsiz1 {
     bits: u32,
@@ -1019,7 +1019,7 @@ impl OtgFsDieptsiz1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDtxfsts1 {
     bits: u32,
@@ -1046,7 +1046,7 @@ impl OtgFsDtxfsts1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepctl2 {
     bits: u32,
@@ -1145,7 +1145,7 @@ impl OtgFsDiepctl2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepint2 {
     bits: u32,
@@ -1208,7 +1208,7 @@ impl OtgFsDiepint2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDieptsiz2 {
     bits: u32,
@@ -1251,7 +1251,7 @@ impl OtgFsDieptsiz2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDtxfsts2 {
     bits: u32,
@@ -1278,7 +1278,7 @@ impl OtgFsDtxfsts2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepctl3 {
     bits: u32,
@@ -1377,7 +1377,7 @@ impl OtgFsDiepctl3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepint3 {
     bits: u32,
@@ -1440,7 +1440,7 @@ impl OtgFsDiepint3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDieptsiz3 {
     bits: u32,
@@ -1483,7 +1483,7 @@ impl OtgFsDieptsiz3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDtxfsts3 {
     bits: u32,
@@ -1510,7 +1510,7 @@ impl OtgFsDtxfsts3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepctl4 {
     bits: u32,
@@ -1609,7 +1609,7 @@ impl OtgFsDiepctl4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepint4 {
     bits: u32,
@@ -1672,7 +1672,7 @@ impl OtgFsDiepint4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDieptsiz4 {
     bits: u32,
@@ -1715,7 +1715,7 @@ impl OtgFsDieptsiz4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDtxfsts4 {
     bits: u32,
@@ -1742,7 +1742,7 @@ impl OtgFsDtxfsts4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepctl5 {
     bits: u32,
@@ -1841,7 +1841,7 @@ impl OtgFsDiepctl5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDiepint5 {
     bits: u32,
@@ -1904,7 +1904,7 @@ impl OtgFsDiepint5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDieptsiz55 {
     bits: u32,
@@ -1947,7 +1947,7 @@ impl OtgFsDieptsiz55 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDtxfsts55 {
     bits: u32,
@@ -1974,7 +1974,7 @@ impl OtgFsDtxfsts55 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepctl0 {
     bits: u32,
@@ -2041,7 +2041,7 @@ impl OtgFsDoepctl0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepint0 {
     bits: u32,
@@ -2100,7 +2100,7 @@ impl OtgFsDoepint0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoeptsiz0 {
     bits: u32,
@@ -2143,7 +2143,7 @@ impl OtgFsDoeptsiz0 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepctl1 {
     bits: u32,
@@ -2242,7 +2242,7 @@ impl OtgFsDoepctl1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepint1 {
     bits: u32,
@@ -2301,7 +2301,7 @@ impl OtgFsDoepint1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoeptsiz1 {
     bits: u32,
@@ -2344,7 +2344,7 @@ impl OtgFsDoeptsiz1 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepctl2 {
     bits: u32,
@@ -2443,7 +2443,7 @@ impl OtgFsDoepctl2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepint2 {
     bits: u32,
@@ -2502,7 +2502,7 @@ impl OtgFsDoepint2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoeptsiz2 {
     bits: u32,
@@ -2545,7 +2545,7 @@ impl OtgFsDoeptsiz2 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepctl3 {
     bits: u32,
@@ -2644,7 +2644,7 @@ impl OtgFsDoepctl3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepint3 {
     bits: u32,
@@ -2703,7 +2703,7 @@ impl OtgFsDoepint3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoeptsiz3 {
     bits: u32,
@@ -2746,7 +2746,7 @@ impl OtgFsDoeptsiz3 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepctl4 {
     bits: u32,
@@ -2845,7 +2845,7 @@ impl OtgFsDoepctl4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepint4 {
     bits: u32,
@@ -2904,7 +2904,7 @@ impl OtgFsDoepint4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoeptsiz4 {
     bits: u32,
@@ -2947,7 +2947,7 @@ impl OtgFsDoeptsiz4 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepctl5 {
     bits: u32,
@@ -3046,7 +3046,7 @@ impl OtgFsDoepctl5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoepint5 {
     bits: u32,
@@ -3105,7 +3105,7 @@ impl OtgFsDoepint5 {
     }
 }
 
-# [ derive ( Debug , Clone , Copy ) ]
+# [ derive ( Debug , Clone , Copy , PartialEq , Eq ) ]
 # [ repr ( C ) ]
 pub struct OtgFsDoeptsiz5 {
     bits: u32,
